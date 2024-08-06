@@ -1,3 +1,5 @@
+//CÓDIGO MÍNIMO PARA CRIAR O SERVIDOR WEB
+
 /* 1. Importar o módulo http que o nodejs tem para 
 tratar as requisições que vamos trabalhar no servidor
 */
@@ -10,8 +12,7 @@ na rede
 */
 const host = 'localhost';
 
-/* 3. Definir um endereço de porta.
- */
+// 3. Definir um endereço de porta.
 const port = 8000;
 
 /* 4. Criar o servidor com o módulo http a partir do node.js
@@ -20,4 +21,12 @@ uma função que vai ter outros dois parâmetros (requisiçao e resposta).
 */
 const server = http.createServer(function (req, res) {
   res.writeHead(200);
+  res.end('My first server');
+});
+
+/* 5. Vincular o servidor na porta.
+Usar aspas invertidas para interpolar
+*/
+server.listen(port, host, () => {
+  console.log(`Server is running on http://${host}:${port}`);
 });
