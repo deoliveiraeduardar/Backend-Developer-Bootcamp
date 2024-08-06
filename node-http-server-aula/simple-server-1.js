@@ -30,3 +30,9 @@ Usar aspas invertidas para interpolar
 server.listen(port, host, () => {
   console.log(`Server is running on http://${host}:${port}`);
 });
+
+/* Abrir a pasta (folder) no vscode
+Abrir o terminal, que deve conter o caminho da pasta
+Digitar no terminal: npm init -y
+Digitar no terminal: node server.js
+*/
