@@ -1,6 +1,16 @@
+/* 1. Importa o módulo http embutido no Node.js, que fornece
+funcionalidades para criar um servidor HTT
+ */
 const http = require('http');
 
+/* 2. Define a constante host com o valor 'localhost',
+indicando que o servidor deve rodar localmente.
+ */
 const host = 'localhost';
+
+/* 2. Define a constante host com o valor 'localhost',
+indicando que o servidor deve rodar localmente.
+ */
 const port = 3000;
 
 const server = http.createServer(function (req, res) {
